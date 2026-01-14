@@ -131,6 +131,24 @@ nav {
   border-radius: 20px;
   display: block;
 }
+
+/* Avatar spécifique : rendu circulaire pour la photo de profil */
+.profile-avatar {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.12);
+  border: 4px solid rgba(255, 255, 255, 0.12);
+}
+
+@media (max-width: 768px) {
+  .profile-avatar {
+    width: 160px;
+    height: 160px;
+  }
+}
 .about-text {
   flex: 1;
 }
